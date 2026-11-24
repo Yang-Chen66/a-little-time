@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="A gentle space to make room for photos, family, and messages, one small step at a time.">
+    <title>A Little Time</title>
+    <link rel="stylesheet" href="styles.css">
+  </head>
+  <body>
+    <a class="skip-link" href="#main-content">Skip to content</a>
+
+    <header class="site-header page-width">
+      <p class="eyebrow">A little space, just for you</p>
+      <h1>A Little Time<span class="title-dot" aria-hidden="true">.</span></h1>
+      <p class="subtitle">Make a little room for what matters.</p>
+    </header>
+
+    <main id="main-content" class="page-width">
+      <section class="reminders" aria-labelledby="reminders-heading">
+        <div class="section-intro">
+          <p class="eyebrow">At your own pace</p>
+          <h2 id="reminders-heading">Choose one small thing for today.</h2>
+          <p>No need to do it all. A small beginning is enough.</p>
+        </div>
+
+        <!-- Each card has one primary action and a quieter option to wait. -->
+        <div class="card-grid">
+          <article class="reminder-card photo-card">
+            <span class="card-symbol" aria-hidden="true">✧</span>
+            <h3>Photo time</h3>
+            <p>Pick 3 photos you love. Editing can come next.</p>
+            <div class="card-actions">
+              <button class="button-primary" type="button">Start 10 minutes</button>
+              <button class="button-later" type="button" aria-label="Maybe later: Photo time">Maybe later</button>
+            </div>
+          </article>
+
+          <article class="reminder-card family-card">
+            <span class="card-symbol" aria-hidden="true">♡</span>
+            <h3>A moment with my parents</h3>
+            <p>Send a photo, leave a voice message, or plan a call.</p>
+            <div class="card-actions">
+              <button class="button-primary" type="button">Plan a moment</button>
+              <button class="button-later" type="button" aria-label="Maybe later: A moment with my parents">Maybe later</button>
+            </div>
+          </article>
+
+          <article class="reminder-card messages-card">
+            <span class="card-symbol" aria-hidden="true">…</span>
+            <h3>Messages that matter</h3>
+            <p>Take 5 minutes for someone you want to reply to.</p>
+            <div class="card-actions">
+              <button class="button-primary" type="button">Start 5 minutes</button>
+              <button class="button-later" type="button" aria-label="Maybe later: Messages that matter">Maybe later</button>
+            </div>
+          </article>
+        </div>
+      </section>
+
+      <section class="small-step" aria-labelledby="small-step-heading">
+        <div class="small-step-intro">
+          <p class="eyebrow">Make it a little smaller</p>
+          <h2 id="small-step-heading">What have you been putting off?</h2>
+          <p>You choose the task. Start with a step that feels possible.</p>
+        </div>
+        <div class="task-entry">
+          <!-- Static prototype: the input is editable; the button has no behavior yet. -->
+          <label for="task">Something on your mind</label>
+          <div class="input-row">
+            <input id="task" name="task" type="text" placeholder="For example, editing my photos" aria-describedby="task-example prototype-note">
+            <button class="button-primary" type="button">Find a small first step</button>
+          </div>
+          <p id="task-example" class="task-example"><span class="example-label">Example · Photo editing</span>Pick 3 photos → Edit 1 → Write a caption</p>
+        </div>
+      </section>
+    </main>
+
+    <footer class="site-footer page-width">
+      <p class="closing-note">A little time. A little closer.</p>
+      <p id="prototype-note">Layout prototype — timers, scheduling, and task breakdown are planned features.</p>
+    </footer>
+  </body>
+</html>
